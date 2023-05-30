@@ -1,4 +1,4 @@
-# Docs
+# README.md
 
 Hello. Welcome to my new project, which will help you find great movies, cartoons, and more. This app showcases my skills and knowledge of React. Below, you can find the complete documentation for this app.
 
