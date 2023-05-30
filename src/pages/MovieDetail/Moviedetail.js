@@ -4,8 +4,6 @@ import { TMDB_IMAGE_BASE_URL, TMDB_IMAGE_BASE_URL_BG } from '../../helpers/const
 
 
 const Moviedetail = ({movie}) => {
-    console.log(movie);
-
   return (
     <div className='teleflix__movie-details'>
         <div className='teleflix__movie-details_backdrop'>

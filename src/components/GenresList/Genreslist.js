@@ -14,7 +14,6 @@ const Genreslist = ({ setSelectedGenre, setGenreName }) => {
     const navigate = useNavigate();
 
     async function onclick(event) {
-        console.log(event.target.id);
         const response = await GetMoviesByGenre(event.target.id);
         setSelectedGenre(response);
         setGenreName(event.target.innerText)
