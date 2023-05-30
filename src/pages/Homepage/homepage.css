@@ -1,0 +1,11 @@
+.teleflix__homepage {
+    width: 100%;
+}
+
+#teleflix__homepage-parallax::-webkit-scrollbar{ 
+    display: none;
+}
+
+#teleflix__homepage-parallax {
+    top: 0;
+}

@@ -1,0 +1,19 @@
+.teleflix__navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background: transparent;
+    z-index: 10;
+    position: relative;
+}
+
+.teleflix__navbar-logo h2 {
+    font-family: var(--logo-font);
+    color: #FF0000;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}

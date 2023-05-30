@@ -1,0 +1,51 @@
+.teleflix__recomented { 
+    margin-top: 3rem;
+}
+
+.teleflix__recomented-heading h2{
+    color: #ffffff;
+    font-family: var(--font-family);
+    text-decoration: underline;
+}
+
+.teleflix__recomented-movieList { 
+    margin-top: 2rem;
+}
+
+.teleflix__recomented-movieList_card{
+    width: 60rem;
+    height: 25rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.teleflix__recomented-movieList_card-img img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.teleflix__recomented-movieList_card-content {
+    position: absolute;
+    transition: all .3s;
+    opacity: 0;
+    background-color: #3637389a;
+    width: 100%;
+    height: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teleflix__recomented-movieList_card-content h3 {
+    text-align: center;
+    font-family: var(--font-family);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.teleflix__recomented-movieList_card:hover .teleflix__recomented-movieList_card-content{
+    opacity: 1;
+    height: 25rem;   
+}

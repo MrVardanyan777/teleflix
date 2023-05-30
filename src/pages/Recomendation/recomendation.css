@@ -1,0 +1,8 @@
+.teleflix__recomendation {
+    width: 100%;
+    top: 0;
+    /* background-color: #002d77; */
+    background-image: url('https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    position: absolute;
+}

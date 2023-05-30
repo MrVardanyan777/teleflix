@@ -1,0 +1,87 @@
+.teleflix__movie-details {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.teleflix__movie-detail_mainpage {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teleflix__movie-datail_backdrop{
+    position: relative;
+}
+
+.teleflix__movie-datail_bg {
+    width: 100%;   
+    height: 100vh;
+}
+
+.teleflix__movie-datail_bg img {
+    object-fit: cover;
+}
+
+.teleflix__movie-details_single {
+    margin-top: 1rem;
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.teleflix__movie-details_single-img{
+    height: 100%;
+}
+
+.teleflix__movie-details_single-img img {
+    height: 100%;
+    border-radius: 7px;
+}
+
+.teleflex__movie-details_single-content {
+    margin-left: 3rem;
+    font-family: var(--font-family);
+}
+
+.teleflex__movie-details_single-content_heading h2{
+    color: #ffffff;
+}
+
+.teleflex__movie-details_single-content_heading p { 
+    margin: 1rem 0;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+.teleflex__movie-details_single-content_genres {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teleflex__movie-details_single-content_genres-item {
+    width: 10rem;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    padding: 0.5rem;
+    color: #ffffff;
+    backdrop-filter: blur(5px);
+    margin: 0.5rem;
+    text-align: center;
+    background-color: #8b8b8b75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

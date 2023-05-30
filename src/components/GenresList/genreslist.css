@@ -1,0 +1,29 @@
+.teleflix__genreslist {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.teleflix__generlist-list {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.teleflix__generlist-list button { 
+    width: 50rem;
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    gap: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.teleflix__generlist-list button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}

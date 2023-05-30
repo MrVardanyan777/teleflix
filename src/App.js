@@ -1,24 +1,59 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Genresinglepage, Homepage, Moviedetail, Recomendation } from './pages';
+import { Navbar } from './components';
+
 
 function App() {
+
+  const [selectedGenre, setSelectedGenre] = useState(null);
+  const [genreName, setGenreName] = useState('');
+  const [movie, setMovie] = useState(null);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Routes>
+        <Route 
+            exact
+            path='/'
+            element={
+              <Homepage
+              />
+            }
+        />
+        <Route 
+            path='/recomendation'
+            element={
+              <Recomendation  
+              setSelectedGenre={setSelectedGenre}
+              setGenreName={setGenreName}
+              setMovie={setMovie}
+              />
+            }
+        />
+        <Route 
+          path='/genre/:id'
+          element={
+            <Genresinglepage
+              selectedGenre={selectedGenre}
+              genreName={genreName}
+              setMovie={setMovie}
+             />
+          }
+        />
+        <Route 
+          path='/movie/details/:id'
+          element={
+            <Moviedetail 
+              movie={movie}
+            />
+          }
+        />
+      </Routes>
+    </>
   );
 }
 
